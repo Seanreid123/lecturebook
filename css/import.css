@@ -17,8 +17,6 @@
 }
 
 
-:root{
-}
 html {
   background-color: black;
 }
@@ -486,6 +484,8 @@ input.invalid {
     border-bottom-left-radius: 10px;
   }
   .import .import-container .rightside .section1 {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     width: 100%;

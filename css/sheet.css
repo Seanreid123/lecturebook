@@ -17,7 +17,9 @@
 }
 
 
-:root{
+
+html {
+  background-color: black;
 }
 body {
   font-family: Montserrat, sans-serif;
@@ -126,7 +128,7 @@ p {
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  background: red;
+  background: black;
   height: 600px;
   text-align: center;
 
