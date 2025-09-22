@@ -1,0 +1,464 @@
+.cover {
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  position: fixed;
+  opacity: 0%;
+  z-index: -10000;
+  cursor: pointer;
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  z-index: 10000000;
+  border-radius: 50%;
+  border: 8px solid var(--background-color);
+  border-top-color: var(--primary-color);
+  animation: animate 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1000000000000000000000000000000000;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.the-message {
+  width: 300px;
+  font-size: 15px;
+  height: max-content;
+  display: none;
+  flex-direction: column;
+  padding: 24px;
+  color: var(--white-color);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background-color);
+  border-radius: 15px;
+  text-align: center;
+  z-index: 1000000000000000000000000000000000;
+  gap: 10px;
+
+}
+
+.bridge-connect {
+  display: flex;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 720px;
+  height: fit-content;
+  background: #1a1b1f;
+  z-index: -100000;
+  border: solid 0.2px rgba(128, 128, 128, 0.186);
+  border-radius: 15px;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.bridge-connect .bridge-connect-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%;
+}
+.bridge-connect .bridge-connect-container .leftside {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  width: fit-content;
+  width: 100%;
+}
+.bridge-connect .bridge-connect-container .leftside .leftside-container .head {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 18px 8px;
+  position: relative;
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .head
+  h1 {
+  font-size: 18px;
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .head
+  .exit {
+  position: absolute;
+  right: 16px;
+  top: 0px;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffffff14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 0 18px 18px;
+  margin-top: 20px;
+  gap: 5px;
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .bottom
+  h2 {
+  font-size: 13px;
+  color: #ffffff99;
+  margin-bottom: 8px;
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .bottom
+  .one {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 0;
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .bottom
+  .one:hover {
+  background: #ffffff14;
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .bottom
+  .one
+  img {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .bottom
+  .one
+  p {
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+}
+.bridge-connect .bridge-connect-container .leftside .leftside-container .learn {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: solid 0.2px rgba(128, 128, 128, 0.186);
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .learn
+  p {
+  font-size: 13px;
+  color: #ffffff99;
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .learn
+  .learn-more {
+  cursor: pointer;
+  display: none;
+}
+.bridge-connect
+  .bridge-connect-container
+  .leftside
+  .leftside-container
+  .learn
+  .learn-more
+  p {
+  font-size: 13px;
+  color: #3898ff;
+}
+.bridge-connect .bridge-connect-container .rightside {
+  display: flex;
+  border-left: solid 0.2px rgba(128, 128, 128, 0.186);
+}
+.bridge-connect .bridge-connect-container .rightside .rightside-container {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  width: 100%;
+}
+.bridge-connect .bridge-connect-container .rightside .rightside-container .top {
+  display: flex;
+  justify-content: flex-start;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 12px;
+  width: 100%;
+  position: relative;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .top
+  .back {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .top
+  .smart {
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 16px;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .top
+  .hidden {
+  display: none;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .top
+  .smart {
+  display: non;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .top
+  .exit {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffffff14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .top
+  .exit
+  svg {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .bottom {
+  display: flex;
+  margin: 0 8px;
+  justify-content: center;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .bottom
+  .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+  gap: 25px;
+  margin-top: 25px;
+  align-items: center;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .bottom
+  .wrapper
+  h1 {
+  font-size: 18px;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .bottom
+  .wrapper
+  .two {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .bottom
+  .wrapper
+  .two
+  img {
+  width: 48px;
+  height: 48px;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .bottom
+  .wrapper
+  .two
+  .other {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .bottom
+  .wrapper
+  .two
+  .other
+  h5 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.bridge-connect
+  .bridge-connect-container
+  .rightside
+  .rightside-container
+  .bottom
+  .wrapper
+  .two
+  .other
+  p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff99;
+}
+
+@media (max-width: 775px) {
+  .bridge-connect {
+    width: 368px;
+  }
+  .bridge-connect .bridge-connect-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .bridge-connect .bridge-connect-container .rightside {
+    display: none;
+    width: fit-content;
+  }
+  .bridge-connect .bridge-connect-container .leftside .head h1 {
+    text-align: center;
+  }
+  .bridge-connect
+    .bridge-connect-container
+    .leftside
+    .leftside-container
+    .learn
+    .learn-more {
+    cursor: pointer;
+    display: flex;
+  }
+  .bridge-connect
+    .bridge-connect-container
+    .leftside
+    .leftside-container
+    .head
+    .exit {
+    display: flex;
+  }
+}
+
+@media (max-width: 390px) {
+  .circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 6px solid var(--background-color);
+    border-top-color: var(--primary-color);
+    animation: animate 2s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000000000000000000000000000000000;
+  }
+}
+
+@media (max-width: 375px) {
+  .bridge-connect {
+    width: 90%;
+  }
+  .bridge-connect
+    .bridge-connect-container
+    .rightside
+    .rightside-container
+    .bottom
+    .wrapper {
+    width: 100%;
+  }
+}

